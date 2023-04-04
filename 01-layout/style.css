@@ -1,0 +1,113 @@
+/* Fonts*/
+@font-face {
+    font-family: "nevis";
+    src: url("./css/fonts/nevis.eot");
+    src: url("./css/fonts/nevis.eot?#iefix") format("embedded-opentype"),
+        url("./css/fonts/nevis.woff") format("woff"),
+        url("./css/fonts/nevis.ttf") format("truetype"),
+        url("./css/fonts/nevis.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General styles */
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-image: url("../img/paven.png");
+}
+
+/* headboard */
+
+#header {
+    min-width: 64rem;
+    width: 100%;
+    height: 15.625rem;
+    margin: 0px auto;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header #logo {
+    width: 48.125rem;
+    margin: 0px auto;
+    padding-top: 1.25rem;
+}
+
+#header #logo img {
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 8.75rem;
+}
+
+#header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #70b231;
+    font-family: "nevis";
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    margin-top: 0.625rem;
+    text-shadow: 0rem 0.125rem 0.008rem #333333;
+    transition: all 300ms;
+}
+
+#header h1:hover{
+    text-shadow: 0rem 0.125rem 0.008rem #333333, 0rem 0rem 0.25rem #70b231;
+
+}
+
+#header h1 a {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #70b231;
+}
+
+ /* Navigation bar */
+
+ #nav{
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    height: 2.5rem;
+    font-family: sans-serif, helvetica, arial;
+    font-size: 0.875rem;
+    box-shadow: 0rem 0rem 0.125rem gray;
+ }
+
+ #nav ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0rem auto;
+    width: 68.125rem;
+ }
+
+ #nav >ul >li {
+    line-height: 2.5rem;
+    float: left;
+    border-right: 0.0625rem solid gray;
+ }
+
+
+ #nav >ul >li a {
+    display: block;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    color: white;
+    text-decoration: none;
+    
+ }
+
+ #nav > ul > li >a:first-child{
+
+    border-left: 0.0625rem solid gray;
+
+ }
