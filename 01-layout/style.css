@@ -111,3 +111,7 @@ body {
     border-left: 0.0625rem solid gray;
 
  }
+
+#nav >ul >li:hover{
+    background-color: #70b231;
+}
