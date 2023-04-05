@@ -123,4 +123,28 @@ body {
 
 #nav > ul> li> ul{
     display: none;
+    position: absolute;
+    width: 10rem;
+    box-shadow: 0rem 0rem 0.125rem gray;
+    z-index: 1;
+}
+
+#nav >ul>li:hover>ul{
+    display: block;
+
+}
+
+
+#nav >ul>li:hover>ul>li{
+    background-color: #f2f1f0;
+    border-bottom: 1px solid #D6D6;
+    padding: 0.5rem;
+    line-height: 0.5625rem;
+    font-size: 0.8125rem;
+
+}
+
+
+#nav >ul>li:hover>ul>li a{
+  color: #666666;
 }
