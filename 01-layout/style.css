@@ -117,3 +117,10 @@ body {
     background-color: #70b231;
     box-shadow: 0rem 0rem 0.23rem green inset;
 }
+
+
+/* submenu */
+
+#nav > ul> li> ul{
+    display: none;
+}
