@@ -82,6 +82,23 @@ body {
     background-image: url("../img/paven.png");
 }
 
+a{
+    color: #529125;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #529125;
+    text-decoration: none;
+}
+
+
+a:hover{
+    color: #285616;
+    text-decoration: none;
+}
+
+
 /* headboard */
 
 #header {
@@ -225,7 +242,8 @@ body {
 
 /* Sidebar */
 
-#aside{
+#aside, #phrase{
+    clear: both;
     width: 12.5rem;
     float: left;
     margin: 1.875rem;
@@ -233,6 +251,13 @@ body {
     border: 0.0625rem solid  #ccc;
     box-shadow: 0rem 0.125rem 1.125rem gray;
     font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+
+#phrase{
+    width: 11.25rem;
+    padding: 0.625rem;
+    font-size: 0.875rem;
+    font-family: sans-serif;
 }
 
 #aside .widget{
@@ -260,8 +285,44 @@ body {
     text-align: center;
     padding-top: 0.125rem;
     padding-bottom: 1.225rem;
+    margin-bottom: 0.9375rem;
     background: #f2f3f2;
     border-bottom: 0.0625rem solid #ccc;
     border-left: none;
     border-right: none;
+}
+
+#aside li{
+    margin-top: 0.5rem;
+    margin-bottom: 0.3125rem;
+    margin-left: 1.25rem;
+    list-style: square;
+}
+
+/* forms sidebar */
+
+#aside div label,
+#aside div input[type="text"],
+#aside div label,[type="email"]
+#aside div label,[type="password"]
+#aside div label a{
+    display: block;
+    width: 95%;
+    margin-top: 0.125rem;
+    margin-bottom: 0.125rem;
+}
+
+
+#aside div input[type="button"],
+#aside div input[type="submit"],
+#aside div button{
+    margin-top: 0.3125rem;
+    margin-bottom: 0.625rem;
+}
+
+
+#aside input,
+#aside label{
+    margin: 0rem auto;
+    text-align: center;
 }
