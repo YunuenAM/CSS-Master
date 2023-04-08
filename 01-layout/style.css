@@ -10,6 +10,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "fjalla";
+    src: url("./css/fonts/FjallaOne-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* General styles */
 
 * {
@@ -254,6 +261,7 @@ a:hover{
 }
 
 #phrase{
+    clear: both;
     width: 11.25rem;
     padding: 0.625rem;
     font-size: 0.875rem;
@@ -325,4 +333,19 @@ a:hover{
 #aside label{
     margin: 0rem auto;
     text-align: center;
+}
+
+
+/* sections */
+
+#sections{
+    float: right;
+    width: 75%;
+    font-family: sans-serif;
+    margin-right: 1.25rem;
+}
+
+ h2{
+   font-family: "fjalla";
+   font-size: 1.5rem ;
 }
