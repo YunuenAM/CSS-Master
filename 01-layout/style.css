@@ -17,6 +17,19 @@
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: "icons";
+    src: url("./css/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular")format('svg'),
+        url("./css/fonts/websymbols-regular-webfont.eot"),
+        url("./css/fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("./css/fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("./css/fonts/websymbols-regular-webfont.ttf") format("truetype");
+
+        font-weight: normal;
+    font-style: normal;
+}
+
 /* General styles */
 
 * {
@@ -24,13 +37,14 @@
     padding: 0px;
 
 }
+
 /* forms */
 
-input[type= "text"] ,
-input[type= "email"] ,
-input[type= "password"] ,
-select{
-    border: 0.0625rem solid  #c9c9c9;
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    border: 0.0625rem solid #c9c9c9;
     box-shadow: 0rem 0rem 0.125rem #ccc inset;
     padding: 0.0625rem;
     padding-top: 0.125rem;
@@ -40,10 +54,10 @@ select{
 }
 
 
-input[type= "text"] :focus,
-input[type= "email"] :focus,
-input[type= "password"] :focus,
-select:focus{
+input[type="text"] :focus,
+input[type="email"] :focus,
+input[type="password"] :focus,
+select:focus {
 
     border: 0.0625rem solid #70b231;
     color: black;
@@ -53,7 +67,7 @@ select:focus{
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
-button{
+button {
     display: block;
     border-radius: 0.125rem;
     border: 0.0625rem solid green;
@@ -68,17 +82,17 @@ button{
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
-button:hover{
-   box-shadow: 0rem 0rem 0.125rem gray;
+button:hover {
+    box-shadow: 0rem 0rem 0.125rem gray;
 }
 
 
 input[type="button"]:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
-button:active{
-   box-shadow: 0rem 0rem 0.1875rem gray inset;
-   text-shadow: 0rem 0rem 0.0625rem #ccc;
+button:active {
+    box-shadow: 0rem 0rem 0.1875rem gray inset;
+    text-shadow: 0rem 0rem 0.0625rem #ccc;
 }
 
 
@@ -89,18 +103,18 @@ body {
     background-image: url("../img/paven.png");
 }
 
-a{
+a {
     color: #529125;
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: #529125;
     text-decoration: none;
 }
 
 
-a:hover{
+a:hover {
     color: #285616;
     text-decoration: none;
 }
@@ -144,7 +158,7 @@ a:hover{
     transition: all 300ms;
 }
 
-#header h1:hover{
+#header h1:hover {
     text-shadow: 0rem 0.125rem 0.008rem #333333, 0rem 0rem 0.25rem #70b231;
 
 }
@@ -155,9 +169,9 @@ a:hover{
     color: #70b231;
 }
 
- /* Navigation bar */
+/* Navigation bar */
 
- #nav{
+#nav {
     width: 100%;
     background-color: #333333;
     color: white;
@@ -165,39 +179,39 @@ a:hover{
     font-family: sans-serif, helvetica, arial;
     font-size: 0.875rem;
     box-shadow: 0rem 0rem 0.125rem gray;
- }
+}
 
- #nav ul{
+#nav ul {
     list-style: none;
     text-decoration: none;
     margin: 0rem auto;
     width: 68.125rem;
- }
+}
 
- #nav >ul >li {
+#nav>ul>li {
     line-height: 2.5rem;
     float: left;
     border-right: 0.0625rem solid gray;
     transition: all 300ms;
- }
+}
 
 
- #nav >ul >li a {
+#nav>ul>li a {
     display: block;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     color: white;
     text-decoration: none;
-    
- }
 
- #nav > ul > li >a:first-child{
+}
+
+#nav>ul>li>a:first-child {
 
     border-left: 0.0625rem solid gray;
 
- }
+}
 
-#nav >ul >li:hover{
+#nav>ul>li:hover {
     background-color: #70b231;
     box-shadow: 0rem 0rem 0.23rem green inset;
 }
@@ -205,7 +219,7 @@ a:hover{
 
 /* submenu */
 
-#nav > ul> li> ul{
+#nav>ul>li>ul {
     display: none;
     position: absolute;
     width: 10rem;
@@ -213,13 +227,13 @@ a:hover{
     z-index: 1;
 }
 
-#nav >ul>li:hover>ul{
+#nav>ul>li:hover>ul {
     display: block;
 
 }
 
 
-#nav >ul>li:hover>ul>li{
+#nav>ul>li:hover>ul>li {
     background-color: #f2f1f0;
     border-bottom: 1px solid #D6D6;
     padding: 1.5rem;
@@ -230,45 +244,47 @@ a:hover{
 }
 
 
-#nav >ul>li:hover>ul>li a{
-  color: #666666;
+#nav>ul>li:hover>ul>li a {
+    color: #666666;
 }
 
-#nav >ul>li:hover>ul>li:hover{
-   box-shadow: 0rem 0rem 0.375rem #ccc inset;
-   background-color: beige;
+#nav>ul>li:hover>ul>li:hover {
+    box-shadow: 0rem 0rem 0.375rem #ccc inset;
+    background-color: beige;
 }
 
 /*content*/
-#content{
+#content {
     width: 78.125rem;
     min-height: 68.75rem;
     margin: 0rem auto;
+    font-family: sans-serif, Arial, Helvetica;
 }
 
 
 /* Sidebar */
 
-#aside, #phrase{
+#aside,
+#phrase {
     clear: both;
     width: 12.5rem;
     float: left;
     margin: 1.875rem;
     background-color: white;
-    border: 0.0625rem solid  #ccc;
+    border: 0.0625rem solid #ccc;
     box-shadow: 0rem 0.125rem 1.125rem gray;
     font-family: sans-serif, Arial, Helvetica, sans-serif;
 }
 
-#phrase{
+#phrase {
 
     width: 11.25rem;
-    padding: 0.625rem;
+    padding: 0.600rem;
     font-size: 0.875rem;
     font-family: sans-serif;
 }
 
-#aside .widget{
+#aside .widget {
     display: block;
     width: 11.25rem;
     height: 15rem;
@@ -277,16 +293,16 @@ a:hover{
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     font-size: 0.875rem;
-    border-bottom: 0.0635rem dashed  #333333;
+    border-bottom: 0.0635rem dashed #333333;
 }
 
-#aside .widget:last-child{
+#aside .widget:last-child {
 
     margin-bottom: 1.25rem;
-    
+
 }
 
-#aside h3{
+#aside h3 {
     display: block;
     color: black;
     width: 100%;
@@ -300,7 +316,16 @@ a:hover{
     border-right: none;
 }
 
-#aside li{
+.blue {
+   
+    color: rgb(60, 147, 178) !important;
+   
+}
+
+.pink{
+    color: rgb(216, 46, 103)  !important;;
+}
+#aside li {
     margin-top: 0.5rem;
     margin-bottom: 0.3125rem;
     margin-left: 1.25rem;
@@ -311,9 +336,9 @@ a:hover{
 
 #aside div label,
 #aside div input[type="text"],
-#aside div label,[type="email"]
-#aside div label,[type="password"]
-#aside div label a{
+#aside div label,
+[type="email"] #aside div label,
+[type="password"] #aside div label a {
     display: block;
     width: 95%;
     margin-top: 0.125rem;
@@ -323,14 +348,14 @@ a:hover{
 
 #aside div input[type="button"],
 #aside div input[type="submit"],
-#aside div button{
+#aside div button {
     margin-top: 0.3125rem;
     margin-bottom: 0.625rem;
 }
 
 
 #aside input,
-#aside label{
+#aside label {
     margin: 0rem auto;
     text-align: center;
 }
@@ -338,27 +363,27 @@ a:hover{
 
 /* sections */
 
-#sections{
+#sections {
     float: right;
     width: 75%;
     font-family: sans-serif;
     margin-right: 1.25rem;
 }
 
- h2{
-   font-family: "fjalla";
-   font-size: 1.5rem;
-   font-weight: normal;
-   letter-spacing: 0.0625rem;
-   text-align: center;
-   padding-top: 1.25rem;
-   padding-bottom: 0.625rem;
-   margin-top: -1.25rem;
-   border-bottom: 0.0625px solid #ccc;
+h2 {
+    font-family: "fjalla";
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 0.0625rem;
+    text-align: center;
+    padding-top: 1.25rem;
+    padding-bottom: 0.625rem;
+    margin-top: -1.25rem;
+    border-bottom: 0.0625px solid #ccc;
 }
 
 
-#sections section{
+#sections section {
     margin-top: 2.5rem;
     background-color: white;
     padding: 1.25rem;
@@ -371,40 +396,80 @@ a:hover{
 }
 
 
-.article{
+.article {
     margin: 0.625rem;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 
 }
 
-.date{
+.date {
     color: gray;
     font-size: 0.875rem;
 }
 
 
 .stickerOne,
-.stickerTwo{
+.stickerTwo {
     position: absolute;
     margin-top: -3.2rem;
     z-index: 0;
 
 }
 
-.stickerTwo{
+.stickerTwo {
     margin-left: 56%;
 }
 
-.orange{
+.orange {
     color: orange;
 }
 
-.red{
+.red {
     color: red;
 }
 
-.yellow{
+.yellow {
     color: yellow;
 }
 
+.icon{
+    font-family: "icons";
+    float: left;
+    margin-right: 0.3125rem;
+    margin-top: -0.125rem;
+}
+
+.blue{
+    color: rgb(35, 65, 196);
+}
+
+
+.clearfix{
+    float:none;
+    clear: both;
+}
+
+
+#history{
+    float: right;
+    margin-top: 20px;
+    font-family: sans-serif, Arial, Helvetica;
+    margin-right: 1.25rem;
+}
+/* footer */
+
+
+#footer{
+    width: 100%;
+    margin: 0rem auto;
+    text-align: center;
+    margin-top: 2.5rem;
+    background-color: #333;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    color: white;
+    font-family: sans-serif,Arial, Helvetica;
+    font-size: 0.875rem;
+    box-shadow: 0rem 0rem 0.125rem gray;
+}
