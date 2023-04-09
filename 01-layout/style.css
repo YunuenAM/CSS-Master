@@ -261,7 +261,7 @@ a:hover{
 }
 
 #phrase{
-    clear: both;
+
     width: 11.25rem;
     padding: 0.625rem;
     font-size: 0.875rem;
@@ -347,5 +347,64 @@ a:hover{
 
  h2{
    font-family: "fjalla";
-   font-size: 1.5rem ;
+   font-size: 1.5rem;
+   font-weight: normal;
+   letter-spacing: 0.0625rem;
+   text-align: center;
+   padding-top: 1.25rem;
+   padding-bottom: 0.625rem;
+   margin-top: -1.25rem;
+   border-bottom: 0.0625px solid #ccc;
 }
+
+
+#sections section{
+    margin-top: 2.5rem;
+    background-color: white;
+    padding: 1.25rem;
+    border: 0.0625rem solid #ccc;
+    box-shadow: 0rem 0rem 0.25rem #c9c9c9;
+    color: #333;
+    font-size: 1rem;
+    overflow: hidden;
+
+}
+
+
+.article{
+    margin: 0.625rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+
+}
+
+.date{
+    color: gray;
+    font-size: 0.875rem;
+}
+
+
+.stickerOne,
+.stickerTwo{
+    position: absolute;
+    margin-top: -3.2rem;
+    z-index: 0;
+
+}
+
+.stickerTwo{
+    margin-left: 56%;
+}
+
+.orange{
+    color: orange;
+}
+
+.red{
+    color: red;
+}
+
+.yellow{
+    color: yellow;
+}
+
